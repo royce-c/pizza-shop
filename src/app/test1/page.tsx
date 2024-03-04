@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Button from "../components/ui/button";
+import { JSX, SVGProps } from "react";
 
 export default function Component() {
   return (
@@ -67,7 +68,7 @@ export default function Component() {
                   <p className="text-sm text-gray-500 dark:text-gray-400">Classic cheese and tomato base.</p>
                   <p className="text-xl font-bold">$9.99</p>
                 </div>
-                <Button size="sm">Add to Cart</Button>
+                <Button>Add to Cart</Button>
               </div>
               <div className="flex flex-col items-center gap-2 p-4 border rounded-lg border-gray-200 bg-gray-50 shadow-sm sm:p-6 dark:border-gray-800 dark:bg-gray-950">
                 <img
@@ -84,7 +85,7 @@ export default function Component() {
                   </p>
                   <p className="text-xl font-bold">$11.99</p>
                 </div>
-                <Button size="sm">Add to Cart</Button>
+                <Button>Add to Cart</Button>
               </div>
               <div className="flex flex-col items-center gap-2 p-4 border rounded-lg border-gray-200 bg-gray-50 shadow-sm sm:p-6 dark:border-gray-800 dark:bg-gray-950">
                 <img
@@ -101,7 +102,7 @@ export default function Component() {
                   </p>
                   <p className="text-xl font-bold">$14.99</p>
                 </div>
-                <Button size="sm">Add to Cart</Button>
+                <Button>Add to Cart</Button>
               </div>
               <div className="flex flex-col items-center gap-2 p-4 border rounded-lg border-gray-200 bg-gray-50 shadow-sm sm:p-6 dark:border-gray-800 dark:bg-gray-950">
                 <img
@@ -118,7 +119,7 @@ export default function Component() {
                   </p>
                   <p className="text-xl font-bold">$12.99</p>
                 </div>
-                <Button size="sm">Add to Cart</Button>
+                <Button>Add to Cart</Button>
               </div>
             </div>
           </div>
@@ -225,7 +226,7 @@ export default function Component() {
   )
 }
 
-function FlagIcon(props) {
+function FlagIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -246,7 +247,7 @@ function FlagIcon(props) {
 }
 
 
-function MenuIcon(props) {
+function MenuIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
