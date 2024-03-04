@@ -384,7 +384,7 @@ export default function Component() {
                 <div className="flex flex-col gap-1">
                   <h3 className="font-semibold">Opening Hours</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
-                    Mon - Fri: 	11:30 AM – 11:00 PM
+                    Mon - Fri: 11:30 AM – 11:00 PM
                     <br />
                     Sat - Sun: Closed
                   </p>
@@ -392,7 +392,7 @@ export default function Component() {
                 <div className="flex flex-col gap-1">
                   <h3 className="font-semibold">Contact Information</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
-                  595 W Pender St
+                    595 W Pender St
                     <br />
                     Vancouver, BC V6B 1V5
                     <br />
@@ -409,11 +409,11 @@ export default function Component() {
                   <Label htmlFor="email">Email</Label>
                   <Input id="email" required type="email" />
                 </div>
-                <div className="flex flex-col gap-1 sm:col-start-2">
+                <div className="flex flex-col gap-1 sm:col-span-2">
                   <Label htmlFor="message">Message</Label>
                   <Textarea id="message" required />
                 </div>
-                <Button>Send Message</Button>
+                <Button className="sm:col-span-2">Send Message</Button>
               </form>
             </div>
           </div>
