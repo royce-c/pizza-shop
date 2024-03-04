@@ -375,8 +375,8 @@ export default function Component() {
                 Contact Us
               </h2>
               <p className="max-w-prose text-gray-500 md:text-xl/relaxed xl:text-base/relaxed dark:text-gray-400">
-                Have a question or want to place an order? Contact us and we&apos;ll
-                be happy to help.
+                Have a question or want to place an order? Contact us and
+                we&apos;ll be happy to help.
               </p>
             </div>
             <div className="flex flex-col gap-4">
@@ -457,7 +457,9 @@ export default function Component() {
   );
 }
 
-function ChevronRightIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
+function ChevronRightIcon(
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) {
   return (
     <svg
       {...props}
@@ -495,7 +497,9 @@ function StarIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   );
 }
 
-function UserCircleIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
+function UserCircleIcon(
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) {
   return (
     <svg
       {...props}

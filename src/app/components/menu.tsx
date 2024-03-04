@@ -1,5 +1,4 @@
-// Menu.tsx
-import React from 'react';
+import React from "react";
 
 const Menu: React.FC = () => {
   return (
@@ -8,27 +7,43 @@ const Menu: React.FC = () => {
         <h1 className="text-3xl font-bold text-gray-800">Pizza Restaurant</h1>
         <div className="bg-gray-200 rounded-lg p-4 flex items-center justify-between">
           <h2 className="text-lg font-semibold text-gray-800">Menu</h2>
-          <button className="px-4 py-2 bg-blue-500 text-white rounded-lg">Order Now</button>
+          <button className="px-4 py-2 bg-blue-500 text-white rounded-lg">
+            Order Now
+          </button>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="bg-white rounded-lg shadow-md p-4">
-            <h3 className="text-lg font-semibold text-gray-800">Margherita Pizza</h3>
+            <h3 className="text-lg font-semibold text-gray-800">
+              Margherita Pizza
+            </h3>
             <p className="text-gray-600">Classic cheese and tomato base</p>
             <p className="text-xl font-semibold text-gray-800 mt-2">$9.99</p>
           </div>
           <div className="bg-white rounded-lg shadow-md p-4">
-            <h3 className="text-lg font-semibold text-gray-800">Pepperoni Pizza</h3>
-            <p className="text-gray-600">Spicy pepperoni, cheese, and tomato base</p>
+            <h3 className="text-lg font-semibold text-gray-800">
+              Pepperoni Pizza
+            </h3>
+            <p className="text-gray-600">
+              Spicy pepperoni, cheese, and tomato base
+            </p>
             <p className="text-xl font-semibold text-gray-800 mt-2">$11.99</p>
           </div>
           <div className="bg-white rounded-lg shadow-md p-4">
-            <h3 className="text-lg font-semibold text-gray-800">Vegetarian Pizza</h3>
-            <p className="text-gray-600">Assorted vegetables, cheese, and tomato base</p>
+            <h3 className="text-lg font-semibold text-gray-800">
+              Vegetarian Pizza
+            </h3>
+            <p className="text-gray-600">
+              Assorted vegetables, cheese, and tomato base
+            </p>
             <p className="text-xl font-semibold text-gray-800 mt-2">$10.99</p>
           </div>
           <div className="bg-white rounded-lg shadow-md p-4">
-            <h3 className="text-lg font-semibold text-gray-800">Meat Lovers Pizza</h3>
-            <p className="text-gray-600">Bacon, sausage, pepperoni, cheese, and tomato base</p>
+            <h3 className="text-lg font-semibold text-gray-800">
+              Meat Lovers Pizza
+            </h3>
+            <p className="text-gray-600">
+              Bacon, sausage, pepperoni, cheese, and tomato base
+            </p>
             <p className="text-xl font-semibold text-gray-800 mt-2">$13.99</p>
           </div>
         </div>
