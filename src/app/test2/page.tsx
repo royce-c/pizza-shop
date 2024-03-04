@@ -84,54 +84,86 @@ export default function Component() {
         </div>
       </div>
 
-      <section className="w-full py-12 lg:py-24">
-        <div className="container px-4 md:px-6">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 xl:grid-cols-2xl-400px">
-            <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-                Special Offers
-              </h2>
-              <p className="max-w-[500px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Enjoy great savings with our special deals. Check back often for
-                new offers!
-              </p>
+      <section className="py-12 bg-gray-50 md:py-24 lg:py-32">
+        <div className="container grid items-center gap-4 px-4 text-center md:px-6">
+          <div className="space-y-2">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              Featured Pizzas
+            </h2>
+            <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              Try our special selection of delicious pizzas.
+            </p>
+          </div>
+          <div className="grid max-w-sm gap-4 mx-auto items-start sm:max-w-3xl sm:grid-cols-2 lg:max-w-5xl lg:grid-cols-4">
+            <div className="flex flex-col items-center gap-2 p-4 border rounded-lg border-gray-200 bg-gray-50 shadow-sm sm:p-6 dark:border-gray-800 dark:bg-gray-950">
+              <img
+                alt="Pizza"
+                className="rounded-lg object-cover aspect-[1/1] overflow-hidden"
+                height="200"
+                src="/TheNewYorker.jpg"
+                width="200"
+              />
+              <div className="space-y-2">
+                <h3 className="text-xl font-bold">Margherita</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  Classic cheese and tomato base.
+                </p>
+                <p className="text-xl font-bold">$9.99</p>
+              </div>
+              <Button size="sm">Order Online</Button>
             </div>
-            <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-              <div className="flex flex-col gap-1">
-                <img
-                  src="/TheNewYorker.jpg"
-                  alt="Pizza & Wings Combo"
-                  className="rounded-lg"
-                />
-                <h3 className="font-semibold">Monday Madness</h3>
+            <div className="flex flex-col items-center gap-2 p-4 border rounded-lg border-gray-200 bg-gray-50 shadow-sm sm:p-6 dark:border-gray-800 dark:bg-gray-950">
+              <img
+                alt="Pizza"
+                className="rounded-lg object-cover aspect-[1/1] overflow-hidden"
+                height="200"
+                src="/Hawaiian.jpeg"
+                width="200"
+              />
+              <div className="space-y-2">
+                <h3 className="text-xl font-bold">Pepperoni</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Start your week with a bang! Buy one large pizza, get the
-                  second at 50% off.
+                  Classic cheese and tomato base with pepperoni.
                 </p>
+                <p className="text-xl font-bold">$11.99</p>
               </div>
-              <div className="flex flex-col gap-1">
-                <img
-                  src="/TheGreek.jpg"
-                  alt="Family Feast"
-                  className="rounded-lg"
-                />
-                <h3 className="font-semibold">Family Feast</h3>
+              <Button size="sm">Order Online</Button>
+            </div>
+            <div className="flex flex-col items-center gap-2 p-4 border rounded-lg border-gray-200 bg-gray-50 shadow-sm sm:p-6 dark:border-gray-800 dark:bg-gray-950">
+              <img
+                alt="Pizza"
+                className="rounded-lg object-cover aspect-[1/1] overflow-hidden"
+                height="200"
+                src="/TheGreek.jpg"
+                width="200"
+              />
+              <div className="space-y-2">
+                <h3 className="text-xl font-bold">Supreme</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Treat the family to a delicious dinner. 2 medium pizzas, 4
-                  drinks, and a side of garlic bread for $29.99.
+                  Classic cheese and tomato base with pepperoni, mushrooms,
+                  onions, and peppers.
                 </p>
+                <p className="text-xl font-bold">$14.99</p>
               </div>
-              <div className="flex flex-col gap-1">
-                <img
-                  src="/Hawaiian.jpeg"
-                  alt="Pizza & Wings Combo"
-                  className="rounded-lg"
-                />
-                <h3 className="font-semibold">Pizza & Wings Combo</h3>
+              <Button size="sm">Order Online</Button>
+            </div>
+            <div className="flex flex-col items-center gap-2 p-4 border rounded-lg border-gray-200 bg-gray-50 shadow-sm sm:p-6 dark:border-gray-800 dark:bg-gray-950">
+              <img
+                alt="Pizza"
+                className="rounded-lg object-cover aspect-[1/1] overflow-hidden"
+                height="200"
+                src="/TheGreek.jpg"
+                width="200"
+              />
+              <div className="space-y-2">
+                <h3 className="text-xl font-bold">Vegetarian</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Game night essential! Large pizza and 12 wings for $19.99.
+                  Classic cheese and tomato base with mushrooms, onions, and
+                  peppers.
                 </p>
+                <p className="text-xl font-bold">$12.99</p>
               </div>
+              <Button size="sm">Order Online</Button>
             </div>
           </div>
         </div>
@@ -140,11 +172,11 @@ export default function Component() {
       <section className="w-full py-12 lg:py-24" id="menu">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col gap-4">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-                Our Menu
+            <div className="space-y-2 text-center">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                Full Menu
               </h2>
-              <p className="max-w-[800px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              <p className="mx-auto max-w-[800px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                 Explore our variety of pizzas. From classic choices to unique
                 flavors, we have something for everyone.
               </p>
@@ -384,6 +416,27 @@ export default function Component() {
           </div>
         </div>
       </section>
+
+      <footer className="flex flex-col gap-2 py-12 bg-gray-900 md:flex-row md:gap-4 md:py-8 lg:flex-row">
+        <div className="container flex flex-col items-center gap-2 text-center md:flex-row md:justify-between md:gap-4 md:max-w-5xl md:mx-auto lg:gap-6">
+          <Link className="flex items-center gap-2 text-2xl font-bold text-gray-50 md:text-3xl" href="#">
+            Pizza Time
+          </Link>
+          <p className="text-sm text-gray-300 md:order-3 md:text-gray-400">© 2023 Pizza Time. All rights reserved.</p>
+          <nav className="flex flex-col gap-2 md:flex-row md:gap-4 lg:gap-2">
+            <Link className="text-sm text-gray-300 transition-colors hover:text-gray-50 md:ml-4 md:text-base" href="#">
+              Home
+            </Link>
+            <Link className="text-sm text-gray-300 transition-colors hover:text-gray-50 md:ml-4 md:text-base" href="#">
+              Menu
+            </Link>
+            <Link className="text-sm text-gray-300 transition-colors hover:text-gray-50 md:ml-4 md:text-base" href="#">
+              Contact
+            </Link>
+          </nav>
+        </div>
+      </footer>
+      
     </>
   );
 }
