@@ -384,17 +384,17 @@ export default function Component() {
                 <div className="flex flex-col gap-1">
                   <h3 className="font-semibold">Opening Hours</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
-                    Mon - Fri: 11:00 AM - 10:00 PM
+                    Mon - Fri: 	11:30 AM – 11:00 PM
                     <br />
-                    Sat - Sun: 11:00 AM - 11:00 PM
+                    Sat - Sun: Closed
                   </p>
                 </div>
                 <div className="flex flex-col gap-1">
                   <h3 className="font-semibold">Contact Information</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
-                    123 Main Street
+                  595 W Pender St
                     <br />
-                    Springfield, CA 12345
+                    Vancouver, BC V6B 1V5
                     <br />
                     <a href="#">+1 (234) 567-890</a>
                   </p>
