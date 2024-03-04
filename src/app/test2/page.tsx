@@ -52,29 +52,21 @@ export default function Component() {
           <div className="grid items-center gap-6 lg:grid-cols-[1fr_700px]">
             <div className="space-y-4">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                <h1
+                  className="text-3xl font-bold tracking-tighter sm:text-5xl"
+                  style={{ fontFamily: "YourFontName" }}
+                >
                   Pizza 2001
                 </h1>
-                <p className="max-w-[500px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+
+                <p
+                  className="max-w-[500px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400"
+                  style={{ fontFamily: "YourFontName" }}
+                >
                   Best Downtown Vancouver Pizza for over 25 Years!
                 </p>
               </div>
-              <div className="grid gap-1">
-                {/* <Link
-                  className="inline-flex items-center font-medium text-gray-900 transition-colors hover:underline dark:text-gray-50 dark:hover:underline"
-                  href="#"
-                >
-                  View Menu
-                  <ChevronRightIcon className="w-4 h-4 ml-2 peer" />
-                </Link>
-                <Link
-                  className="inline-flex items-center font-medium text-gray-900 transition-colors hover:underline dark:text-gray-50 dark:hover:underline"
-                  href="#"
-                >
-                  Order Online
-                  <ChevronRightIcon className="w-4 h-4 ml-2 peer" />
-                </Link> */}
-              </div>
+              <div className="grid gap-1"></div>
             </div>
             <img
               alt="Restaurant"
