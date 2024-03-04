@@ -10,7 +10,7 @@ export default function Component() {
       <header className="bg-gray-900 py-4">
         <div className="container flex items-center justify-between px-4">
           <Link className="flex items-center gap-2 text-gray-50" href="#">
-            {/* <FlagIcon className="h-6 w-6" /> */}
+            <PizzaIcon className="h-6 w-6" />
             <span className="font-semibold">Pizza Time</span>
           </Link>
           <nav className="hidden md:flex gap-4">
@@ -419,24 +419,37 @@ export default function Component() {
 
       <footer className="flex flex-col gap-2 py-12 bg-gray-900 md:flex-row md:gap-4 md:py-8 lg:flex-row">
         <div className="container flex flex-col items-center gap-2 text-center md:flex-row md:justify-between md:gap-4 md:max-w-5xl md:mx-auto lg:gap-6">
-          <Link className="flex items-center gap-2 text-2xl font-bold text-gray-50 md:text-3xl" href="#">
+          <Link
+            className="flex items-center gap-2 text-2xl font-bold text-gray-50 md:text-3xl"
+            href="#"
+          >
             Pizza Time
           </Link>
-          <p className="text-sm text-gray-300 md:order-3 md:text-gray-400">© 2023 Pizza Time. All rights reserved.</p>
+          <p className="text-sm text-gray-300 md:order-3 md:text-gray-400">
+            © 2023 Pizza Time. All rights reserved.
+          </p>
           <nav className="flex flex-col gap-2 md:flex-row md:gap-4 lg:gap-2">
-            <Link className="text-sm text-gray-300 transition-colors hover:text-gray-50 md:ml-4 md:text-base" href="#">
+            <Link
+              className="text-sm text-gray-300 transition-colors hover:text-gray-50 md:ml-4 md:text-base"
+              href="#"
+            >
               Home
             </Link>
-            <Link className="text-sm text-gray-300 transition-colors hover:text-gray-50 md:ml-4 md:text-base" href="#">
+            <Link
+              className="text-sm text-gray-300 transition-colors hover:text-gray-50 md:ml-4 md:text-base"
+              href="#"
+            >
               Menu
             </Link>
-            <Link className="text-sm text-gray-300 transition-colors hover:text-gray-50 md:ml-4 md:text-base" href="#">
+            <Link
+              className="text-sm text-gray-300 transition-colors hover:text-gray-50 md:ml-4 md:text-base"
+              href="#"
+            >
               Contact
             </Link>
           </nav>
         </div>
       </footer>
-      
     </>
   );
 }
@@ -496,6 +509,60 @@ function UserCircleIcon(props) {
       <circle cx="12" cy="12" r="10" />
       <circle cx="12" cy="10" r="3" />
       <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662" />
+    </svg>
+  );
+}
+
+function PizzaIcon(props) {
+  return (
+    <svg
+      {...props}
+      fill="#ffffff"
+      height="200px"
+      width="200px"
+      version="1.1"
+      id="Capa_1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 224.512 224.512"
+      xmlSpace="preserve"
+      transform="rotate(-45)"
+    >
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        <g>
+          <circle cx="89" cy="74.426" r="14.146"></circle>
+          <path d="M112.256,126.77c-7.811,0-14.145,6.334-14.145,14.147c0,7.816,6.334,14.15,14.145,14.15c7.814,0,14.148-6.334,14.148-14.15 C126.404,133.104,120.07,126.77,112.256,126.77z"></path>
+          <circle cx="133.563" cy="93.729" r="14.146"></circle>
+          <path d="M195.287,16.574C168.741,5.576,140.776,0,112.169,0c-28.493,0-56.4,5.574-82.945,16.566 c-1.838,0.762-3.298,2.223-4.06,4.061c-0.761,1.838-0.761,3.904,0.001,5.742l11.992,28.932c0.001,0.004,0.005,0.008,0.007,0.012 l68.16,164.574c1.168,2.818,3.917,4.625,6.926,4.625c0.218,0,0.437-0.01,0.656-0.029c2.85-0.248,5.271-2.088,6.311-4.682 l68.143-164.49c0.002-0.004,0.004-0.006,0.006-0.01l11.98-28.928C200.93,22.545,199.113,18.158,195.287,16.574z M112.169,15 c24.133,0,47.778,4.264,70.397,12.688l-6.246,15.08c-20.618-7.598-42.157-11.445-64.138-11.445 c-21.896,0-43.382,3.848-63.982,11.443L41.946,27.68C64.554,19.262,88.141,15,112.169,15z M112.254,197.416L53.949,56.643 c18.766-6.846,38.317-10.32,58.232-10.32c20,0,39.605,3.477,58.389,10.324L112.254,197.416z"></path>
+        </g>
+      </g>
+    </svg>
+  );
+}
+
+function MenuIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <line x1="4" x2="20" y1="12" y2="12" />
+      <line x1="4" x2="20" y1="6" y2="6" />
+      <line x1="4" x2="20" y1="18" y2="18" />
     </svg>
   );
 }
