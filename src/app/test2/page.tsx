@@ -7,31 +7,38 @@ import Button from "../components/ui/button";
 export default function Component() {
   return (
     <>
-      <header className="bg-gray-900 py-4">
+      <header className="bg-[#1D1A1B] py-4">
         <div className="container flex items-center justify-between px-4">
           <Link className="flex items-center gap-2 text-gray-50" href="#">
             <PizzaIcon className="h-6 w-6" />
-            <span className="font-semibold">Pizza Time</span>
+            <span className="font-semibold">Pizza 2001</span>
           </Link>
           <nav className="hidden md:flex gap-4">
             <Link
               className="flex items-center text-sm font-medium text-gray-100 transition-colors hover:text-gray-50"
-              href="#"
+              href="#home"
             >
               Home
             </Link>
             <Link
               className="flex items-center text-sm font-medium text-gray-100 transition-colors hover:text-gray-50"
-              href="#"
+              href="#menu"
             >
               Menu
             </Link>
             <Link
               className="flex items-center text-sm font-medium text-gray-100 transition-colors hover:text-gray-50"
-              href="#"
+              href="#contact"
             >
               Contact
             </Link>
+            <div className="hidden md:flex flex-grow justify-center">
+              <input
+                type="text"
+                placeholder="Search"
+                className="py-1 px-2 w-24 md:w-32 rounded-md bg-gray-200 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
           </nav>
           <button className="md:hidden">
             {/* <MenuIcon className="w-6 h-6" /> */}
@@ -39,17 +46,17 @@ export default function Component() {
           </button>
         </div>
       </header>
+
       <div className="bg-gray-200 py-12 lg:py-24">
         <div className="container px-4 md:px-6">
           <div className="grid items-center gap-6 lg:grid-cols-[1fr_700px]">
             <div className="space-y-4">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Delicious Pizza
+                  Pizza 2001
                 </h1>
-                <p className="max-w-[500px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Handcrafted pizzas made with the finest ingredients. Every
-                  slice is a delight.
+                <p className="max-w-[500px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                  Best Downtown Vancouver Pizza for over 25 Years!
                 </p>
               </div>
               <div className="grid gap-1">
@@ -91,7 +98,9 @@ export default function Component() {
               Featured Pizzas
             </h2>
             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Try our special selection of delicious pizzas.
+              Our dough is made fresh daily and topped to perfection then cooked
+              on stone in our deck ovens. We only use premium ingredients on our
+              pizzas.
             </p>
           </div>
           <div className="grid max-w-sm gap-4 mx-auto items-start sm:max-w-3xl sm:grid-cols-2 lg:max-w-5xl lg:grid-cols-4">
@@ -104,9 +113,10 @@ export default function Component() {
                 width="200"
               />
               <div className="space-y-2">
-                <h3 className="text-xl font-bold">Margherita</h3>
+                <h3 className="text-xl font-bold">New Yorker</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Classic cheese and tomato base.
+                  Layered with mozzarella premium toppings and finished with
+                  another layer of assorted cheeses
                 </p>
                 <p className="text-xl font-bold">$9.99</p>
               </div>
@@ -121,9 +131,10 @@ export default function Component() {
                 width="200"
               />
               <div className="space-y-2">
-                <h3 className="text-xl font-bold">Pepperoni</h3>
+                <h3 className="text-xl font-bold">Hawaiian</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Classic cheese and tomato base with pepperoni.
+                  Every House Pizza starts with hand tossed dough topped with
+                  our signature sauce and mozzarella
                 </p>
                 <p className="text-xl font-bold">$11.99</p>
               </div>
@@ -141,7 +152,7 @@ export default function Component() {
                 <h3 className="text-xl font-bold">Supreme</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                   Classic cheese and tomato base with pepperoni, mushrooms,
-                  onions, and peppers.
+                  onions, and peppers
                 </p>
                 <p className="text-xl font-bold">$14.99</p>
               </div>
@@ -158,8 +169,8 @@ export default function Component() {
               <div className="space-y-2">
                 <h3 className="text-xl font-bold">Vegetarian</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Classic cheese and tomato base with mushrooms, onions, and
-                  peppers.
+                  Hand tossed dough our signature sauce and always topped
+                  generously with mozzarella grated daily
                 </p>
                 <p className="text-xl font-bold">$12.99</p>
               </div>
@@ -221,7 +232,7 @@ export default function Component() {
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-bold">Meat Lovers</h3>
+                <h3 className="text-2xl font-bold">House Pizzas</h3>
                 <div className="grid gap-4 my-4">
                   <div className="grid grid-cols-2 items-start gap-4">
                     <div className="space-y-1">
@@ -309,8 +320,7 @@ export default function Component() {
                 Customer Reviews
               </h2>
               <p className="max-w-[500px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Don't just take our word for it. Here's what our customers have
-                to say about our pizza.
+                What our customers say about our pizza.
               </p>
             </div>
             <div className="grid gap-6">
@@ -332,9 +342,9 @@ export default function Component() {
                   </div>
                 </div>
                 <p className="text-sm text-gray-500 md:text-base/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  The pizza was delicious! I loved the combination of flavors in
-                  the veggie pizza. The crust was perfectly crispy. Will
-                  definitely order again.
+                  Came in for lunch once and now it is my favorite pizza place!
+                  The customer service is great and the pizza is even better. I
+                  highly recommend the New Yorker.
                 </p>
               </div>
               <div className="grid gap-2">
@@ -355,16 +365,16 @@ export default function Component() {
                   </div>
                 </div>
                 <p className="text-sm text-gray-500 md:text-base/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  The pizza was good, but I felt the toppings were a bit sparse.
-                  The delivery was quick, and the customer service was
-                  excellent.
+                  I have been ordering from Pizza 2001 for years and they never
+                  disappoint. The Hawaiian is my favorite and I order it every
+                  time.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="w-full py-12 lg:py-24">
+      <section className="w-full py-12 lg:py-24" id="contact">
         <div className="container px-4 md:px-6">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 xl:grid-cols-2xl-400px">
             <div className="space-y-4">
@@ -417,16 +427,16 @@ export default function Component() {
         </div>
       </section>
 
-      <footer className="flex flex-col gap-2 py-12 bg-gray-900 md:flex-row md:gap-4 md:py-8 lg:flex-row">
+      <footer className="flex flex-col gap-2 py-12 bg-[#1D1A1B] md:flex-row md:gap-4 md:py-8 lg:flex-row">
         <div className="container flex flex-col items-center gap-2 text-center md:flex-row md:justify-between md:gap-4 md:max-w-5xl md:mx-auto lg:gap-6">
           <Link
             className="flex items-center gap-2 text-2xl font-bold text-gray-50 md:text-3xl"
             href="#"
           >
-            Pizza Time
+            Pizza 2001
           </Link>
           <p className="text-sm text-gray-300 md:order-3 md:text-gray-400">
-            © 2023 Pizza Time. All rights reserved.
+            © Pizza 2001
           </p>
           <nav className="flex flex-col gap-2 md:flex-row md:gap-4 lg:gap-2">
             <Link
@@ -437,13 +447,13 @@ export default function Component() {
             </Link>
             <Link
               className="text-sm text-gray-300 transition-colors hover:text-gray-50 md:ml-4 md:text-base"
-              href="#"
+              href="#menu"
             >
               Menu
             </Link>
             <Link
               className="text-sm text-gray-300 transition-colors hover:text-gray-50 md:ml-4 md:text-base"
-              href="#"
+              href="#contact"
             >
               Contact
             </Link>
