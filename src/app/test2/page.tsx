@@ -1,37 +1,79 @@
-import Link from "next/link"
-import Label from "../components/ui/label"
-import Input from "../components/ui/input"
-import Textarea from "../components/ui/textarea"
+import Link from "next/link";
+import Label from "../components/ui/label";
+import Input from "../components/ui/input";
+import Textarea from "../components/ui/textarea";
 import Button from "../components/ui/button";
 
 export default function Component() {
   return (
     <>
+      <header className="bg-gray-900 py-4">
+        <div className="container flex items-center justify-between px-4">
+          <Link className="flex items-center gap-2 text-gray-50" href="#">
+            {/* <FlagIcon className="h-6 w-6" /> */}
+            <span className="font-semibold">Pizza Time</span>
+          </Link>
+          <nav className="hidden md:flex gap-4">
+            <Link
+              className="flex items-center text-sm font-medium text-gray-100 transition-colors hover:text-gray-50"
+              href="#"
+            >
+              Home
+            </Link>
+            <Link
+              className="flex items-center text-sm font-medium text-gray-100 transition-colors hover:text-gray-50"
+              href="#"
+            >
+              Menu
+            </Link>
+            <Link
+              className="flex items-center text-sm font-medium text-gray-100 transition-colors hover:text-gray-50"
+              href="#"
+            >
+              Contact
+            </Link>
+          </nav>
+          <button className="md:hidden">
+            {/* <MenuIcon className="w-6 h-6" /> */}
+            <span className="sr-only">Toggle menu</span>
+          </button>
+        </div>
+      </header>
       <div className="bg-gray-50 py-12 lg:py-24">
         <div className="container px-4 md:px-6">
           <div className="grid items-center gap-6 lg:grid-cols-[1fr_700px]">
             <div className="space-y-4">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Delicious Pizza</h1>
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Delicious Pizza
+                </h1>
                 <p className="max-w-[500px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Handcrafted pizzas made with the finest ingredients. Every slice is a delight.
+                  Handcrafted pizzas made with the finest ingredients. Every
+                  slice is a delight.
                 </p>
               </div>
               <div className="grid gap-1">
-                <Link
+                {/* <Link
                   className="inline-flex items-center font-medium text-gray-900 transition-colors hover:underline dark:text-gray-50 dark:hover:underline"
                   href="#"
                 >
                   View Menu
                   <ChevronRightIcon className="w-4 h-4 ml-2 peer" />
                 </Link>
+                <Link
+                  className="inline-flex items-center font-medium text-gray-900 transition-colors hover:underline dark:text-gray-50 dark:hover:underline"
+                  href="#"
+                >
+                  Order Online
+                  <ChevronRightIcon className="w-4 h-4 ml-2 peer" />
+                </Link> */}
               </div>
             </div>
             <img
               alt="Restaurant"
               className="mx-auto rounded-xl overflow-hidden object-cover object-center peer"
               height="400"
-              src="/placeholder.svg"
+              src="/TheNewYorker.jpg"
               style={{
                 aspectRatio: "700/400",
                 objectFit: "cover",
@@ -41,13 +83,70 @@ export default function Component() {
           </div>
         </div>
       </div>
+
+      <section className="w-full py-12 lg:py-24">
+        <div className="container px-4 md:px-6">
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 xl:grid-cols-2xl-400px">
+            <div className="space-y-4">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+                Special Offers
+              </h2>
+              <p className="max-w-[500px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                Enjoy great savings with our special deals. Check back often for
+                new offers!
+              </p>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+              <div className="flex flex-col gap-1">
+                <img
+                  src="/TheNewYorker.jpg"
+                  alt="Pizza & Wings Combo"
+                  className="rounded-lg"
+                />
+                <h3 className="font-semibold">Monday Madness</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  Start your week with a bang! Buy one large pizza, get the
+                  second at 50% off.
+                </p>
+              </div>
+              <div className="flex flex-col gap-1">
+                <img
+                  src="/TheGreek.jpg"
+                  alt="Family Feast"
+                  className="rounded-lg"
+                />
+                <h3 className="font-semibold">Family Feast</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  Treat the family to a delicious dinner. 2 medium pizzas, 4
+                  drinks, and a side of garlic bread for $29.99.
+                </p>
+              </div>
+              <div className="flex flex-col gap-1">
+                <img
+                  src="/Hawaiian.jpeg"
+                  alt="Pizza & Wings Combo"
+                  className="rounded-lg"
+                />
+                <h3 className="font-semibold">Pizza & Wings Combo</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  Game night essential! Large pizza and 12 wings for $19.99.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="w-full py-12 lg:py-24" id="menu">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col gap-4">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Menu</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+                Our Menu
+              </h2>
               <p className="max-w-[800px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Explore our variety of pizzas. From classic choices to unique flavors, we have something for everyone.
+                Explore our variety of pizzas. From classic choices to unique
+                flavors, we have something for everyone.
               </p>
             </div>
             <div className="grid gap-12 md:grid-cols-2">
@@ -61,7 +160,9 @@ export default function Component() {
                         Classic cheese and tomato sauce.
                       </p>
                     </div>
-                    <div className="self-start justify-self-end font-bold">$9.99</div>
+                    <div className="self-start justify-self-end font-bold">
+                      $9.99
+                    </div>
                   </div>
                   <div className="grid grid-cols-2 items-start gap-4">
                     <div className="space-y-1">
@@ -70,7 +171,9 @@ export default function Component() {
                         Olives, feta cheese, and fresh veggies.
                       </p>
                     </div>
-                    <div className="self-start justify-self-end font-bold">$11.99</div>
+                    <div className="self-start justify-self-end font-bold">
+                      $11.99
+                    </div>
                   </div>
                   <div className="grid grid-cols-2 items-start gap-4">
                     <div className="space-y-1">
@@ -79,7 +182,9 @@ export default function Component() {
                         Colorful bell peppers, mushrooms, and onions.
                       </p>
                     </div>
-                    <div className="self-start justify-self-end font-bold">$10.99</div>
+                    <div className="self-start justify-self-end font-bold">
+                      $10.99
+                    </div>
                   </div>
                 </div>
               </div>
@@ -93,7 +198,9 @@ export default function Component() {
                         Double pepperoni for extra flavor.
                       </p>
                     </div>
-                    <div className="self-start justify-self-end font-bold">$12.99</div>
+                    <div className="self-start justify-self-end font-bold">
+                      $12.99
+                    </div>
                   </div>
                   <div className="grid grid-cols-2 items-start gap-4">
                     <div className="space-y-1">
@@ -102,7 +209,9 @@ export default function Component() {
                         Sausage, bacon, and ham.
                       </p>
                     </div>
-                    <div className="self-start justify-self-end font-bold">$14.99</div>
+                    <div className="self-start justify-self-end font-bold">
+                      $14.99
+                    </div>
                   </div>
                   <div className="grid grid-cols-2 items-start gap-4">
                     <div className="space-y-1">
@@ -111,7 +220,9 @@ export default function Component() {
                         BBQ sauce, bacon, and chicken.
                       </p>
                     </div>
-                    <div className="self-start justify-self-end font-bold">$13.99</div>
+                    <div className="self-start justify-self-end font-bold">
+                      $13.99
+                    </div>
                   </div>
                 </div>
               </div>
@@ -125,7 +236,9 @@ export default function Component() {
                         Ham and pineapple for a tropical twist.
                       </p>
                     </div>
-                    <div className="self-start justify-self-end font-bold">$11.99</div>
+                    <div className="self-start justify-self-end font-bold">
+                      $11.99
+                    </div>
                   </div>
                   <div className="grid grid-cols-2 items-start gap-4">
                     <div className="space-y-1">
@@ -134,7 +247,9 @@ export default function Component() {
                         Truffle oil drizzle and gourmet mushrooms.
                       </p>
                     </div>
-                    <div className="self-start justify-self-end font-bold">$15.99</div>
+                    <div className="self-start justify-self-end font-bold">
+                      $15.99
+                    </div>
                   </div>
                   <div className="grid grid-cols-2 items-start gap-4">
                     <div className="space-y-1">
@@ -143,7 +258,9 @@ export default function Component() {
                         Jalapenos and hot sausage for a fiery kick.
                       </p>
                     </div>
-                    <div className="self-start justify-self-end font-bold">$13.99</div>
+                    <div className="self-start justify-self-end font-bold">
+                      $13.99
+                    </div>
                   </div>
                 </div>
               </div>
@@ -151,46 +268,17 @@ export default function Component() {
           </div>
         </div>
       </section>
+
       <section className="w-full py-12 lg:py-24">
         <div className="container px-4 md:px-6">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 xl:grid-cols-2xl-400px">
             <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Special Offers</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+                Customer Reviews
+              </h2>
               <p className="max-w-[500px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Enjoy great savings with our special deals. Check back often for new offers!
-              </p>
-            </div>
-            <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-              <div className="flex flex-col gap-1">
-                <h3 className="font-semibold">Monday Madness</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Start your week with a bang! Buy one large pizza, get the second at 50% off.
-                </p>
-              </div>
-              <div className="flex flex-col gap-1">
-                <h3 className="font-semibold">Family Feast</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Treat the family to a delicious dinner. 2 medium pizzas, 4 drinks, and a side of garlic bread for
-                  $29.99.
-                </p>
-              </div>
-              <div className="flex flex-col gap-1">
-                <h3 className="font-semibold">Pizza & Wings Combo</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Game night essential! Large pizza and 12 wings for $19.99.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="w-full py-12 lg:py-24">
-        <div className="container px-4 md:px-6">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 xl:grid-cols-2xl-400px">
-            <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Customer Reviews</h2>
-              <p className="max-w-[500px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Don't just take our word for it. Here's what our customers have to say about our pizza.
+                Don't just take our word for it. Here's what our customers have
+                to say about our pizza.
               </p>
             </div>
             <div className="grid gap-6">
@@ -205,13 +293,16 @@ export default function Component() {
                       <StarIcon className="w-4 h-4 fill-accent-warning peer group-hover:translate-y-0.5 transition-transform" />
                       <StarIcon className="w-4 h-4 fill-accent-warning peer group-hover:translate-y-0.5 transition-transform" />
                       <StarIcon className="w-4 h-4 fill-muted-warning peer group-hover:translate-y-0.5 transition-transform" />
-                      <span className="text-gray-500 dark:text-gray-400">4/5</span>
+                      <span className="text-gray-500 dark:text-gray-400">
+                        4/5
+                      </span>
                     </div>
                   </div>
                 </div>
                 <p className="text-sm text-gray-500 md:text-base/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  The pizza was delicious! I loved the combination of flavors in the veggie pizza. The crust was
-                  perfectly crispy. Will definitely order again.
+                  The pizza was delicious! I loved the combination of flavors in
+                  the veggie pizza. The crust was perfectly crispy. Will
+                  definitely order again.
                 </p>
               </div>
               <div className="grid gap-2">
@@ -225,13 +316,16 @@ export default function Component() {
                       <StarIcon className="w-4 h-4 fill-accent-warning peer group-hover:translate-y-0.5 transition-transform" />
                       <StarIcon className="w-4 h-4 fill-muted-warning peer group-hover:translate-y-0.5 transition-transform" />
                       <StarIcon className="w-4 h-4 fill-muted-warning peer group-hover:translate-y-0.5 transition-transform" />
-                      <span className="text-gray-500 dark:text-gray-400">3/5</span>
+                      <span className="text-gray-500 dark:text-gray-400">
+                        3/5
+                      </span>
                     </div>
                   </div>
                 </div>
                 <p className="text-sm text-gray-500 md:text-base/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  The pizza was good, but I felt the toppings were a bit sparse. The delivery was quick, and the
-                  customer service was excellent.
+                  The pizza was good, but I felt the toppings were a bit sparse.
+                  The delivery was quick, and the customer service was
+                  excellent.
                 </p>
               </div>
             </div>
@@ -242,9 +336,12 @@ export default function Component() {
         <div className="container px-4 md:px-6">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 xl:grid-cols-2xl-400px">
             <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Contact Us</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+                Contact Us
+              </h2>
               <p className="max-w-prose text-gray-500 md:text-xl/relaxed xl:text-base/relaxed dark:text-gray-400">
-                Have a question or want to place an order? Contact us and we'll be happy to help.
+                Have a question or want to place an order? Contact us and we'll
+                be happy to help.
               </p>
             </div>
             <div className="flex flex-col gap-4">
@@ -288,7 +385,7 @@ export default function Component() {
         </div>
       </section>
     </>
-  )
+  );
 }
 
 function ChevronRightIcon(props) {
@@ -307,9 +404,8 @@ function ChevronRightIcon(props) {
     >
       <path d="m9 18 6-6-6-6" />
     </svg>
-  )
+  );
 }
-
 
 function StarIcon(props) {
   return (
@@ -327,9 +423,8 @@ function StarIcon(props) {
     >
       <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
     </svg>
-  )
+  );
 }
-
 
 function UserCircleIcon(props) {
   return (
@@ -349,5 +444,5 @@ function UserCircleIcon(props) {
       <circle cx="12" cy="10" r="3" />
       <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662" />
     </svg>
-  )
+  );
 }
