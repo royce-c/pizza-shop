@@ -24,6 +24,8 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  
+  zoom: 150%; /* Default zoom of 150% */
 }
 
 @layer utilities {
