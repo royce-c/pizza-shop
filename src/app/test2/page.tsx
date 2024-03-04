@@ -133,7 +133,7 @@ export default function Component() {
               <div className="space-y-2">
                 <h3 className="text-xl font-bold">Hawaiian</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Every House Pizza starts with hand tossed dough topped with
+                  Every Hawaiian Pizza starts with hand tossed dough topped with
                   our signature sauce and mozzarella
                 </p>
                 <p className="text-xl font-bold">$11.99</p>
@@ -211,7 +211,7 @@ export default function Component() {
                     <div className="space-y-1">
                       <h4 className="font-bold">Mediterranean</h4>
                       <p className="text-sm text-gray-500 peer-rtl:justify-end peer-rtl:text-right dark:text-gray-400">
-                        Olives, feta cheese, and fresh veggies.
+                        Olives and fresh veggies.
                       </p>
                     </div>
                     <div className="self-start justify-self-end font-bold">
@@ -220,9 +220,9 @@ export default function Component() {
                   </div>
                   <div className="grid grid-cols-2 items-start gap-4">
                     <div className="space-y-1">
-                      <h4 className="font-bold">Garden Delight</h4>
+                      <h4 className="font-bold">Spicy Veggie</h4>
                       <p className="text-sm text-gray-500 peer-rtl:justify-end peer-rtl:text-right dark:text-gray-400">
-                        Colorful bell peppers, mushrooms, and onions.
+                        Spinach, mushrooms & hot peppers
                       </p>
                     </div>
                     <div className="self-start justify-self-end font-bold">
@@ -236,7 +236,7 @@ export default function Component() {
                 <div className="grid gap-4 my-4">
                   <div className="grid grid-cols-2 items-start gap-4">
                     <div className="space-y-1">
-                      <h4 className="font-bold">Pepperoni Passion</h4>
+                      <h4 className="font-bold">The New Yorker</h4>
                       <p className="text-sm text-gray-500 peer-rtl:justify-end peer-rtl:text-right dark:text-gray-400">
                         Double pepperoni for extra flavor.
                       </p>
@@ -247,9 +247,9 @@ export default function Component() {
                   </div>
                   <div className="grid grid-cols-2 items-start gap-4">
                     <div className="space-y-1">
-                      <h4 className="font-bold">Supreme Sausage</h4>
+                      <h4 className="font-bold">Spicy Beef</h4>
                       <p className="text-sm text-gray-500 peer-rtl:justify-end peer-rtl:text-right dark:text-gray-400">
-                        Sausage, bacon, and ham.
+                        Beef, and ham.
                       </p>
                     </div>
                     <div className="self-start justify-self-end font-bold">
@@ -258,9 +258,9 @@ export default function Component() {
                   </div>
                   <div className="grid grid-cols-2 items-start gap-4">
                     <div className="space-y-1">
-                      <h4 className="font-bold">BBQ Bacon Bliss</h4>
+                      <h4 className="font-bold">All Dressed</h4>
                       <p className="text-sm text-gray-500 peer-rtl:justify-end peer-rtl:text-right dark:text-gray-400">
-                        BBQ sauce, bacon, and chicken.
+                        Pepperoni, mushroom & green peppers
                       </p>
                     </div>
                     <div className="self-start justify-self-end font-bold">
@@ -274,9 +274,9 @@ export default function Component() {
                 <div className="grid gap-4 my-4">
                   <div className="grid grid-cols-2 items-start gap-4">
                     <div className="space-y-1">
-                      <h4 className="font-bold">Hawaiian Paradise</h4>
+                      <h4 className="font-bold">Hawaiian</h4>
                       <p className="text-sm text-gray-500 peer-rtl:justify-end peer-rtl:text-right dark:text-gray-400">
-                        Ham and pineapple for a tropical twist.
+                        Ham and pineapple for a Hawaiian twist.
                       </p>
                     </div>
                     <div className="self-start justify-self-end font-bold">
@@ -285,9 +285,9 @@ export default function Component() {
                   </div>
                   <div className="grid grid-cols-2 items-start gap-4">
                     <div className="space-y-1">
-                      <h4 className="font-bold">Truffle Lovers</h4>
+                      <h4 className="font-bold">The Mushroom</h4>
                       <p className="text-sm text-gray-500 peer-rtl:justify-end peer-rtl:text-right dark:text-gray-400">
-                        Truffle oil drizzle and gourmet mushrooms.
+                        Triple mushrooms.
                       </p>
                     </div>
                     <div className="self-start justify-self-end font-bold">
@@ -296,9 +296,9 @@ export default function Component() {
                   </div>
                   <div className="grid grid-cols-2 items-start gap-4">
                     <div className="space-y-1">
-                      <h4 className="font-bold">Spicy Inferno</h4>
+                      <h4 className="font-bold">Spinach Veggie</h4>
                       <p className="text-sm text-gray-500 peer-rtl:justify-end peer-rtl:text-right dark:text-gray-400">
-                        Jalapenos and hot sausage for a fiery kick.
+                        Black olives, spinach, mushrooms, tomato
                       </p>
                     </div>
                     <div className="self-start justify-self-end font-bold">
