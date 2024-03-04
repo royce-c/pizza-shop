@@ -374,7 +374,7 @@ export default function Component() {
                 Contact Us
               </h2>
               <p className="max-w-prose text-gray-500 md:text-xl/relaxed xl:text-base/relaxed dark:text-gray-400">
-                Have a question or want to place an order? Contact us and we'll
+                Have a question or want to place an order? Contact us and we&apos;ll
                 be happy to help.
               </p>
             </div>

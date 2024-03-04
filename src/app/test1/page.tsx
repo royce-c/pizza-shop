@@ -128,13 +128,13 @@ export default function Component() {
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Customer Testimonials</h2>
               <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Don't just take our word for it. Here's what our customers have to say.
+                Don&apos;t just take our word for it. Here&apos;s what our customers have to say.
               </p>
             </div>
             <div className="mx-auto grid max-w-sm gap-4 items-start sm:max-w-2xl sm:grid-cols-2 lg:max-w-4xl lg:grid-cols-3">
               <div className="flex flex-col gap-2 p-4 border rounded-xl border-gray-200 bg-gray-50 shadow-sm sm:p-6 dark:border-gray-800 dark:bg-gray-950">
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  "Delicious pizza and great service. Highly recommended!"
+                &quot;Delicious pizza and great service. Highly recommended!&quot;
                 </p>
                 <div className="flex items-center gap-2">
                   <img
@@ -156,7 +156,7 @@ export default function Component() {
               </div>
               <div className="flex flex-col gap-2 p-4 border rounded-xl border-gray-200 bg-gray-50 shadow-sm sm:p-6 dark:border-gray-800 dark:bg-gray-950">
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  "The best pizza I've ever had! I'll definitely be coming back for more."
+                &quot;The best pizza I&apos;ve ever had! I&apos;ll definitely be coming back for more.&quot;
                 </p>
                 <div className="flex items-center gap-2">
                   <img
@@ -178,7 +178,7 @@ export default function Component() {
               </div>
               <div className="flex flex-col gap-2 p-4 border rounded-xl border-gray-200 bg-gray-50 shadow-sm sm:p-6 dark:border-gray-800 dark:bg-gray-950">
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  "The pizza was amazing! The crust was perfectly crispy, and the toppings were fresh and flavorful."
+                &quot;The pizza was amazing! The crust was perfectly crispy, and the toppings were fresh and flavorful.&quot;
                 </p>
                 <div className="flex items-center gap-2">
                   <img
