@@ -39,7 +39,7 @@ export default function Component() {
           </button>
         </div>
       </header>
-      <div className="bg-gray-50 py-12 lg:py-24">
+      <div className="bg-gray-200 py-12 lg:py-24">
         <div className="container px-4 md:px-6">
           <div className="grid items-center gap-6 lg:grid-cols-[1fr_700px]">
             <div className="space-y-4">
